@@ -16,6 +16,9 @@ public class BlogV2Controller : ControllerBase
         _liteDbV2Service = liteDbV2Service;
     }
 
+    #region Get Blogs
+
+    #endregion
     [HttpGet]
     public IActionResult GetBlogs()
     {
