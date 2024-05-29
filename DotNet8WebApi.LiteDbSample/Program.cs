@@ -21,6 +21,7 @@ builder.Services.AddScoped(n =>
 });
 
 builder.Services.AddScoped<LiteDbV2Service>();
+builder.Services.AddScoped<LiteDbV3Service>();
 
 var app = builder.Build();
 
