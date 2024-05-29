@@ -145,5 +145,6 @@ public class BlogController : ControllerBase
 
         return result ? StatusCode(202, "Deleting Successful.") : BadRequest();
     }
+
     #endregion
 }
