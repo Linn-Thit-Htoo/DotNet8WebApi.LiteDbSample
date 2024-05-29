@@ -49,6 +49,7 @@ public class LiteDbV3Service
         tableOrClassName ??= typeof(T).Name;
         return _liteDatabase.GetCollection<T>(tableOrClassName).Insert(requestModel);
     }
+
     #endregion
 
     public bool Update<T>(T requestModel, string tableOrClassName)
