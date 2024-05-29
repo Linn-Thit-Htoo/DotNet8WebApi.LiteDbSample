@@ -33,6 +33,9 @@ public class BlogController : ControllerBase
 
     #endregion
 
+    #region MyRegion
+
+    #endregion
     [HttpGet("{id}")]
     public IActionResult GetBlog(string id)
     {
