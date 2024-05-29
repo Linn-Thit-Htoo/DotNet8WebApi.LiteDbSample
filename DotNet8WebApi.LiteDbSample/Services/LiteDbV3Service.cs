@@ -54,12 +54,12 @@ public class LiteDbV3Service
 
     #region Update
 
-    #endregion
     public bool Update<T>(T requestModel, string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
         return _liteDatabase.GetCollection<T>(tableOrClassName).Update(requestModel);
     }
+    #endregion
 
     public bool Delete<T>(ObjectId Id, string tableOrClassName)
     {
