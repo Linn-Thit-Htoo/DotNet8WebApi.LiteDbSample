@@ -27,7 +27,7 @@ public class LiteDbV3Service
 
     #endregion
 
-    #region GetById
+    #region Get By Id
 
     public T GetById<T>(Expression<Func<T, bool>> condition, string tableOrClassName)
     {
