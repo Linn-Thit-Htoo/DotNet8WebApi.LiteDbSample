@@ -52,6 +52,9 @@ public class LiteDbV3Service
 
     #endregion
 
+    #region MyRegion
+
+    #endregion
     public bool Update<T>(T requestModel, string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
