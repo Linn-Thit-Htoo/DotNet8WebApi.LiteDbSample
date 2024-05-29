@@ -129,7 +129,7 @@ public class BlogController : ControllerBase
 
     #endregion
 
-    #region MyRegion
+    #region Delete Blog
 
     #endregion
     [HttpDelete("{id}")]
