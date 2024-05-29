@@ -54,6 +54,7 @@ public class BlogV2Controller : ControllerBase
 
         return Ok(blog);
     }
+
     #endregion
 
     [HttpPut("{id}")]
