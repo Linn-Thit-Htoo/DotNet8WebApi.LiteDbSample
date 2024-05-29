@@ -24,6 +24,7 @@ public class BlogV2Controller : ControllerBase
         var lst = _liteDbV2Service.Blogs.FindAll().ToList();
         return Ok(lst);
     }
+
     #endregion
 
     [HttpGet("{id}")]
