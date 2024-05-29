@@ -107,6 +107,7 @@ public class BlogV2Controller : ControllerBase
 
         return result ? StatusCode(202, "Updating Successful.") : BadRequest();
     }
+
     #endregion
 
     [HttpDelete("{id}")]
