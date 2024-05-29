@@ -129,6 +129,9 @@ public class BlogController : ControllerBase
 
     #endregion
 
+    #region MyRegion
+
+    #endregion
     [HttpDelete("{id}")]
     public IActionResult DeleteBlog(string id)
     {
