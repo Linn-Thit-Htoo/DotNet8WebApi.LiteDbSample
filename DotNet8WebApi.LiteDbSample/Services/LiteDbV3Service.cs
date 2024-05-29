@@ -12,6 +12,9 @@ public class LiteDbV3Service
         _liteDatabase = liteDatabase;
     }
 
+    #region List
+
+    #endregion
     public List<T> List<T>(string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
