@@ -110,6 +110,9 @@ public class BlogV2Controller : ControllerBase
 
     #endregion
 
+    #region Delete Blog
+
+    #endregion
     [HttpDelete("{id}")]
     public IActionResult DeleteBlog(string id)
     {
