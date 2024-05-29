@@ -30,13 +30,14 @@ public class BlogV3Controller : ControllerBase
 
     #region Get Blog
 
-    #endregion
     [HttpGet("{id}")]
     public IActionResult GetBlog(string id)
     {
         var item = _liteDbV3Service.GetById<BlogModel>(x => x.BlogId == id, _tableName);
         return Ok(item);
     }
+
+    #endregion
 
     [HttpPost]
     public IActionResult CreateBlog([FromBody] BlogRequestModel requestModel)
