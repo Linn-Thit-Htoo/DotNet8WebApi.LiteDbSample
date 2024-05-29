@@ -35,6 +35,7 @@ public class BlogV2Controller : ControllerBase
         var item = _liteDbV2Service.Blogs.Find(x => x.BlogId == id).FirstOrDefault();
         return Ok(item);
     }
+
     #endregion
 
     [HttpPost]
