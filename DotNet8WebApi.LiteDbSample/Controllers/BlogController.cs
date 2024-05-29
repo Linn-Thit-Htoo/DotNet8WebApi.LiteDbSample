@@ -131,7 +131,6 @@ public class BlogController : ControllerBase
 
     #region Delete Blog
 
-    #endregion
     [HttpDelete("{id}")]
     public IActionResult DeleteBlog(string id)
     {
@@ -146,4 +145,5 @@ public class BlogController : ControllerBase
 
         return result ? StatusCode(202, "Deleting Successful.") : BadRequest();
     }
+    #endregion
 }
