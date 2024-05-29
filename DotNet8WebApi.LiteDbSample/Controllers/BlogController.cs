@@ -30,6 +30,7 @@ public class BlogController : ControllerBase
 
         return Ok(lst);
     }
+
     #endregion
 
     [HttpGet("{id}")]
