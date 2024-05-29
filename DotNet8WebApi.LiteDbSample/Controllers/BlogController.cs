@@ -67,6 +67,7 @@ public class BlogController : ControllerBase
 
         return Ok(blog);
     }
+
     #endregion
 
     [HttpPut("{id}")]
