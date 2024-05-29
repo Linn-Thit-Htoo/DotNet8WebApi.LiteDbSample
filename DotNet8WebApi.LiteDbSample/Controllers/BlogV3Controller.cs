@@ -19,13 +19,14 @@ public class BlogV3Controller : ControllerBase
 
     #region Get Blogs
 
-    #endregion
     [HttpGet]
     public IActionResult GetBlogs()
     {
         var lst = _liteDbV3Service.List<BlogModel>(_tableName);
         return Ok(lst);
     }
+
+    #endregion
 
     [HttpGet("{id}")]
     public IActionResult GetBlog(string id)
