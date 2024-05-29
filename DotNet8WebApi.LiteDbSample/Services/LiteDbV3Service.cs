@@ -42,6 +42,9 @@ public class LiteDbV3Service
 
     #endregion
 
+    #region Add
+
+    #endregion
     public BsonValue Add<T>(T requestModel, string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
