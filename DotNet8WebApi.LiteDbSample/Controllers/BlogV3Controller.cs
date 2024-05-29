@@ -81,7 +81,6 @@ public class BlogV3Controller : ControllerBase
 
     #region Patch
 
-    #endregion
     [HttpPatch("{id}")]
     public IActionResult Patch(string id, [FromBody] BlogRequestModel requestModel)
     {
@@ -109,6 +108,7 @@ public class BlogV3Controller : ControllerBase
 
         return result ? StatusCode(202, "Updating Successful.") : BadRequest();
     }
+    #endregion
 
     [HttpDelete("{id}")]
     public IActionResult DeleteBlog(string id)
