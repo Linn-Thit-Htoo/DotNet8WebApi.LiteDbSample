@@ -94,6 +94,9 @@ public class BlogController : ControllerBase
 
     #endregion
 
+    #region Patch
+
+    #endregion
     [HttpPatch("{id}")]
     public IActionResult Patch(string id, [FromBody] BlogRequestModel requestModel)
     {
