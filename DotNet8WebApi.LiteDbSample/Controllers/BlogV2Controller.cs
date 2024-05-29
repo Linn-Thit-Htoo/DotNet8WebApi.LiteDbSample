@@ -18,13 +18,13 @@ public class BlogV2Controller : ControllerBase
 
     #region Get Blogs
 
-    #endregion
     [HttpGet]
     public IActionResult GetBlogs()
     {
         var lst = _liteDbV2Service.Blogs.FindAll().ToList();
         return Ok(lst);
     }
+    #endregion
 
     [HttpGet("{id}")]
     public IActionResult GetBlog(string id)
