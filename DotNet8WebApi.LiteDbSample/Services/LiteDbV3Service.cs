@@ -29,7 +29,6 @@ public class LiteDbV3Service
 
     #region GetById
 
-    #endregion
     public T GetById<T>(Expression<Func<T, bool>> condition, string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
@@ -40,6 +39,7 @@ public class LiteDbV3Service
 
         return item!;
     }
+    #endregion
 
     public BsonValue Add<T>(T requestModel, string tableOrClassName)
     {
