@@ -59,6 +59,7 @@ public class LiteDbV3Service
         tableOrClassName ??= typeof(T).Name;
         return _liteDatabase.GetCollection<T>(tableOrClassName).Update(requestModel);
     }
+
     #endregion
 
     public bool Delete<T>(ObjectId Id, string tableOrClassName)
