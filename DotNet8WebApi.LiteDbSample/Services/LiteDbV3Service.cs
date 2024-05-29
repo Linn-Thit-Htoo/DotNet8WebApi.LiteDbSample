@@ -39,5 +39,17 @@ namespace DotNet8WebApi.LiteDbSample.Services
             tableOrClassName ??= typeof(T).Name;
             return _liteDatabase.GetCollection<T>(tableOrClassName).Insert(requestModel);
         }
+
+        public bool Update<T>(T requestModel, string tableOrClassName)
+        {
+            tableOrClassName ??= typeof(T).Name;
+            return _liteDatabase.GetCollection<T>(tableOrClassName).Update(requestModel);
+        }
+
+        public bool Delete<T>(ObjectId Id, string tableOrClassName)
+        {
+            tableOrClassName ??= typeof(T).Name;
+            return _liteDatabase.GetCollection<T>(tableOrClassName).Delete(new BsonValue(Id));
+        }
     }
 }

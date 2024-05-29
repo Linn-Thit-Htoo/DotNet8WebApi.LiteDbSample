@@ -41,7 +41,7 @@ public class BlogController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Create([FromBody] BlogRequestModel requestModel)
+    public IActionResult CreateBlog([FromBody] BlogRequestModel requestModel)
     {
         var db = new LiteDatabase(_filePath);
         var collection = db.GetCollection<BlogModel>("Blog");

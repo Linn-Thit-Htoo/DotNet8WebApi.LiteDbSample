@@ -20,8 +20,6 @@ public class BlogV2Controller : ControllerBase
     public IActionResult GetBlogs()
     {
         var lst = _liteDbV2Service.Blogs.FindAll().ToList();
-        _liteDbV2Service.Dispose();
-
         return Ok(lst);
     }
 
@@ -29,13 +27,11 @@ public class BlogV2Controller : ControllerBase
     public IActionResult GetBlog(string id)
     {
         var item = _liteDbV2Service.Blogs.Find(x => x.BlogId == id).FirstOrDefault();
-        _liteDbV2Service.Dispose();
-
         return Ok(item);
     }
 
     [HttpPost]
-    public IActionResult Create([FromBody] BlogRequestModel requestModel)
+    public IActionResult CreateBlog([FromBody] BlogRequestModel requestModel)
     {
         var blog = new BlogModel
         {
@@ -45,7 +41,6 @@ public class BlogV2Controller : ControllerBase
             BlogContent = requestModel.BlogContent
         };
         _liteDbV2Service.Blogs.Insert(blog);
-        _liteDbV2Service.Dispose();
 
         return Ok(blog);
     }
@@ -63,7 +58,6 @@ public class BlogV2Controller : ControllerBase
         item.BlogContent = requestModel.BlogContent;
 
         var result = _liteDbV2Service.Blogs.Update(item);
-        _liteDbV2Service.Dispose();
 
         return result ? StatusCode(202, "Updating Successful.") : BadRequest();
     }
@@ -92,7 +86,6 @@ public class BlogV2Controller : ControllerBase
         }
 
         var result = _liteDbV2Service.Blogs.Update(item);
-        _liteDbV2Service.Dispose();
 
         return result ? StatusCode(202, "Updating Successful.") : BadRequest();
     }
@@ -105,7 +98,6 @@ public class BlogV2Controller : ControllerBase
             return NotFound("No data found.");
 
         var result = _liteDbV2Service.Blogs.Delete(item.Id);
-        _liteDbV2Service.Dispose();
 
         return result ? StatusCode(202, "Deleting Successful.") : BadRequest();
     }
