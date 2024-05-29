@@ -27,6 +27,9 @@ public class LiteDbV3Service
 
     #endregion
 
+    #region GetById
+
+    #endregion
     public T GetById<T>(Expression<Func<T, bool>> condition, string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
