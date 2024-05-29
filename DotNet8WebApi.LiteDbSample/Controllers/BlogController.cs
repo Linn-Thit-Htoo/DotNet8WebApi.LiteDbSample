@@ -1,6 +1,5 @@
 ﻿using DotNet8WebApi.LiteDbSample.Models;
 using LiteDB;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNet8WebApi.LiteDbSample.Controllers
