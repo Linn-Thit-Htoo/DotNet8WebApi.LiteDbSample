@@ -33,7 +33,7 @@ public class BlogController : ControllerBase
 
     #endregion
 
-    #region MyRegion
+    #region Get Blog
 
     #endregion
     [HttpGet("{id}")]
