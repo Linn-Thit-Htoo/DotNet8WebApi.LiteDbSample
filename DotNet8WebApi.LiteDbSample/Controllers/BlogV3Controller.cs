@@ -1,6 +1,5 @@
 ﻿using DotNet8WebApi.LiteDbSample.Models;
 using DotNet8WebApi.LiteDbSample.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNet8WebApi.LiteDbSample.Controllers
