@@ -29,13 +29,13 @@ public class BlogV2Controller : ControllerBase
 
     #region Get Blog
 
-    #endregion
     [HttpGet("{id}")]
     public IActionResult GetBlog(string id)
     {
         var item = _liteDbV2Service.Blogs.Find(x => x.BlogId == id).FirstOrDefault();
         return Ok(item);
     }
+    #endregion
 
     [HttpPost]
     public IActionResult CreateBlog([FromBody] BlogRequestModel requestModel)
