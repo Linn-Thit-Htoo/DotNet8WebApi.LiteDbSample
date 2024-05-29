@@ -57,6 +57,9 @@ public class BlogV2Controller : ControllerBase
 
     #endregion
 
+    #region Put
+
+    #endregion
     [HttpPut("{id}")]
     public IActionResult Put(string id, [FromBody] BlogRequestModel requestModel)
     {
