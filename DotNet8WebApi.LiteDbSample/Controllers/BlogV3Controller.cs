@@ -17,6 +17,9 @@ public class BlogV3Controller : ControllerBase
         _tableName = "Blog";
     }
 
+    #region Get Blogs
+
+    #endregion
     [HttpGet]
     public IActionResult GetBlogs()
     {
