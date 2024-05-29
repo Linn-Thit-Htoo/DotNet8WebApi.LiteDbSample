@@ -27,7 +27,7 @@ public class BlogV2Controller : ControllerBase
 
     #endregion
 
-    #region MyRegion
+    #region Get Blog
 
     #endregion
     [HttpGet("{id}")]
