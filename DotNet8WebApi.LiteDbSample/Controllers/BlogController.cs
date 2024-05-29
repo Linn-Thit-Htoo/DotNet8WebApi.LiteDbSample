@@ -20,7 +20,6 @@ public class BlogController : ControllerBase
 
     #region Get Blogs
 
-    #endregion
     [HttpGet]
     public IActionResult GetBlogs()
     {
@@ -31,6 +30,7 @@ public class BlogController : ControllerBase
 
         return Ok(lst);
     }
+    #endregion
 
     [HttpGet("{id}")]
     public IActionResult GetBlog(string id)
