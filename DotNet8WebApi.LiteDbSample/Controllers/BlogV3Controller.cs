@@ -76,6 +76,7 @@ public class BlogV3Controller : ControllerBase
 
         return result ? StatusCode(202, "Updating Successful.") : BadRequest();
     }
+
     #endregion
 
     [HttpPatch("{id}")]
