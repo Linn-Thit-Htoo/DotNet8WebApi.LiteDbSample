@@ -59,7 +59,6 @@ public class BlogV2Controller : ControllerBase
 
     #region Put
 
-    #endregion
     [HttpPut("{id}")]
     public IActionResult Put(string id, [FromBody] BlogRequestModel requestModel)
     {
@@ -76,6 +75,7 @@ public class BlogV2Controller : ControllerBase
 
         return result ? StatusCode(202, "Updating Successful.") : BadRequest();
     }
+    #endregion
 
     [HttpPatch("{id}")]
     public IActionResult Patch(string id, [FromBody] BlogRequestModel requestModel)
