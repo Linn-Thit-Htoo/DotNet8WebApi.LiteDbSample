@@ -62,6 +62,9 @@ public class LiteDbV3Service
 
     #endregion
 
+    #region MyRegion
+
+    #endregion
     public bool Delete<T>(ObjectId Id, string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
