@@ -69,5 +69,6 @@ public class LiteDbV3Service
         tableOrClassName ??= typeof(T).Name;
         return _liteDatabase.GetCollection<T>(tableOrClassName).Delete(new BsonValue(Id));
     }
+
     #endregion
 }
