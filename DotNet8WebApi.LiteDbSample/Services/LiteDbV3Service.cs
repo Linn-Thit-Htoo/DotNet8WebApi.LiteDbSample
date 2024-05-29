@@ -52,7 +52,7 @@ public class LiteDbV3Service
 
     #endregion
 
-    #region MyRegion
+    #region Update
 
     #endregion
     public bool Update<T>(T requestModel, string tableOrClassName)
