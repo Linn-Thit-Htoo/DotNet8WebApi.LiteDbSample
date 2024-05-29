@@ -62,7 +62,7 @@ public class LiteDbV3Service
 
     #endregion
 
-    #region MyRegion
+    #region Delete
 
     #endregion
     public bool Delete<T>(ObjectId Id, string tableOrClassName)
