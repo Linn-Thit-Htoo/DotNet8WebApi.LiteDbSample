@@ -14,7 +14,6 @@ public class LiteDbV3Service
 
     #region List
 
-    #endregion
     public List<T> List<T>(string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
@@ -25,6 +24,7 @@ public class LiteDbV3Service
         List<T> _list = lst.FindAll().ToList();
         return _list;
     }
+    #endregion
 
     public T GetById<T>(Expression<Func<T, bool>> condition, string tableOrClassName)
     {
