@@ -41,7 +41,6 @@ public class BlogV3Controller : ControllerBase
 
     #region Create Blog
 
-    #endregion
     [HttpPost]
     public IActionResult CreateBlog([FromBody] BlogRequestModel requestModel)
     {
@@ -56,6 +55,7 @@ public class BlogV3Controller : ControllerBase
 
         return Ok(blog);
     }
+    #endregion
 
     [HttpPut("{id}")]
     public IActionResult Put(string id, [FromBody] BlogRequestModel requestModel)
