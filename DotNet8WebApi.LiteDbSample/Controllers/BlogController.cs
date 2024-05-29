@@ -18,7 +18,7 @@ public class BlogController : ControllerBase
         _filePath = Path.Combine(_folderPath, "Blog.db");
     }
 
-    #region MyRegion
+    #region GetBlogs
 
     #endregion
     [HttpGet]
