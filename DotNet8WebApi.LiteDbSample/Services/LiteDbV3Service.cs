@@ -64,10 +64,10 @@ public class LiteDbV3Service
 
     #region Delete
 
-    #endregion
     public bool Delete<T>(ObjectId Id, string tableOrClassName)
     {
         tableOrClassName ??= typeof(T).Name;
         return _liteDatabase.GetCollection<T>(tableOrClassName).Delete(new BsonValue(Id));
     }
+    #endregion
 }
